@@ -1,6 +1,6 @@
 package com.khello.hockeypool.navdrawer;
 
-public class NavMenuSection implements NavDrawerItem {
+public class NavMenuSection implements INavDrawerItem {
 
     public static final int SECTION_TYPE = 0;
     private int id;

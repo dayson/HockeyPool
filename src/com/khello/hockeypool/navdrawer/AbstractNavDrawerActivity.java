@@ -142,7 +142,7 @@ public abstract class AbstractNavDrawerActivity extends FragmentActivity {
     }
     
     public void selectItem(int position) {
-        NavDrawerItem selectedItem = navConf.getNavItems()[position];
+        INavDrawerItem selectedItem = navConf.getNavItems()[position];
         
         this.onNavItemSelected(selectedItem.getId());
         mDrawerList.setItemChecked(position, true);

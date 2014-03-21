@@ -2,7 +2,7 @@ package com.khello.hockeypool.navdrawer;
 
 import android.content.Context;
 
-public class NavMenuItem implements NavDrawerItem {
+public class NavMenuItem implements INavDrawerItem {
 
     public static final int ITEM_TYPE = 1 ;
 

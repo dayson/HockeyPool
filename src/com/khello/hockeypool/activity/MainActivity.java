@@ -1,5 +1,12 @@
-package com.khello.hockeypool.navdrawer;
+package com.khello.hockeypool.activity;
 
+import com.khello.hockeypool.fragments.HomeFragment;
+import com.khello.hockeypool.navdrawer.AbstractNavDrawerActivity;
+import com.khello.hockeypool.navdrawer.NavDrawerActivityConfiguration;
+import com.khello.hockeypool.navdrawer.NavDrawerAdapter;
+import com.khello.hockeypool.navdrawer.INavDrawerItem;
+import com.khello.hockeypool.navdrawer.NavMenuItem;
+import com.khello.hockeypool.navdrawer.NavMenuSection;
 import com.khello.navigationdrawer.R;
 
 import android.os.Bundle;
@@ -17,7 +24,7 @@ public class MainActivity extends AbstractNavDrawerActivity {
     @Override
     protected NavDrawerActivityConfiguration getNavDrawerConfiguration() {
         
-        NavDrawerItem[] menu = new NavDrawerItem[] {
+        INavDrawerItem[] menu = new INavDrawerItem[] {
                 NavMenuSection.create( 100, "Demos"),
                 NavMenuItem.create(101,"List/Detail (Fragment)", "navdrawer_friends", false, this),
                 NavMenuItem.create(102, "Airport (AsyncTask)", "navdrawer_airport", true, this), 

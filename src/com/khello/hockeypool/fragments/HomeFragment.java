@@ -1,4 +1,4 @@
-package com.khello.hockeypool.navdrawer;
+package com.khello.hockeypool.fragments;
 
 import com.khello.navigationdrawer.R;
 
