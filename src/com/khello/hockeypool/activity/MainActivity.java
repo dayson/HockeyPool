@@ -25,13 +25,13 @@ public class MainActivity extends AbstractNavDrawerActivity {
     protected NavDrawerActivityConfiguration getNavDrawerConfiguration() {
         
         INavDrawerItem[] menu = new INavDrawerItem[] {
-                NavMenuSection.create( 100, "Demos"),
-                NavMenuItem.create(101,"List/Detail (Fragment)", "navdrawer_friends", false, this),
-                NavMenuItem.create(102, "Airport (AsyncTask)", "navdrawer_airport", true, this), 
-                NavMenuSection.create(200, "General"),
-                NavMenuItem.create(202, "Rate this app", "navdrawer_rating", false, this),
-                NavMenuItem.create(203, "Eula", "navdrawer_eula", false, this), 
-                NavMenuItem.create(204, "Quit", "navdrawer_quit", false, this)};
+                NavMenuSection.create( 100, "Dashboard"),
+                NavMenuItem.create(101,"Home", "ic_home", false, this),
+                NavMenuItem.create(102, "Standings", "ic_communities", true, this), 
+                NavMenuSection.create(200, "Matchups"),
+                NavMenuItem.create(202, "MON vs. TOR", "ic_pages", false, this),
+                NavMenuItem.create(202, "VAN vs. OTT", "ic_pages", false, this),
+                NavMenuItem.create(202, "EDM vs. CAL", "ic_pages", false, this)};
         
         NavDrawerActivityConfiguration navDrawerActivityConfiguration = new NavDrawerActivityConfiguration();
         navDrawerActivityConfiguration.setMainLayout(R.layout.activity_main);
