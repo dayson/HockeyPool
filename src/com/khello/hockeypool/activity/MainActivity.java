@@ -1,6 +1,7 @@
 package com.khello.hockeypool.activity;
 
 import com.khello.hockeypool.fragments.HomeFragment;
+import com.khello.hockeypool.fragments.StandingsFragment;
 import com.khello.hockeypool.navdrawer.AbstractNavDrawerActivity;
 import com.khello.hockeypool.navdrawer.NavDrawerActivityConfiguration;
 import com.khello.hockeypool.navdrawer.NavDrawerAdapter;
@@ -53,7 +54,7 @@ public class MainActivity extends AbstractNavDrawerActivity {
             getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new HomeFragment()).commit();
             break;
         case 102:
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new HomeFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new StandingsFragment()).commit();
             break;
         }
     }
