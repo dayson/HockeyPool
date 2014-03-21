@@ -1,8 +1,8 @@
-package com.khello.hockey.navdrawer;
+package com.khello.navigationdrawer;
 
 import android.content.Context;
 
-public class NavMenuItem implements INavDrawerItem {
+public class NavMenuItem implements NavDrawerItem {
 
     public static final int ITEM_TYPE = 1 ;
 

@@ -1,4 +1,4 @@
-package com.khello.hockey.navdrawer;
+package com.khello.navigationdrawer;
 
 import android.widget.BaseAdapter;
 
@@ -9,7 +9,7 @@ public class NavDrawerActivityConfiguration {
     private int drawerLayoutId;
     private int leftDrawerId;
     private int[] actionMenuItemsToHideWhenDrawerOpen;
-    private INavDrawerItem[] navItems;
+    private NavDrawerItem[] navItems;
     private int drawerOpenDesc;
     private int drawerCloseDesc;
     private BaseAdapter baseAdapter;
@@ -55,11 +55,11 @@ public class NavDrawerActivityConfiguration {
         this.actionMenuItemsToHideWhenDrawerOpen = actionMenuItemsToHideWhenDrawerOpen;
     }
 
-    public INavDrawerItem[] getNavItems() {
+    public NavDrawerItem[] getNavItems() {
         return navItems;
     }
 
-    public void setNavItems(INavDrawerItem[] navItems) {
+    public void setNavItems(NavDrawerItem[] navItems) {
         this.navItems = navItems;
     }
 

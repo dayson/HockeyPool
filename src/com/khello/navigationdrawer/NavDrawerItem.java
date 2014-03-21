@@ -1,6 +1,6 @@
-package com.khello.hockey.navdrawer;
+package com.khello.navigationdrawer;
 
-public interface INavDrawerItem {
+public interface NavDrawerItem {
     public int getId();
     public String getLabel();
     public int getType();

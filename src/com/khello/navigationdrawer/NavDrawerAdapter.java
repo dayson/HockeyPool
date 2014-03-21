@@ -1,6 +1,4 @@
-package com.khello.hockey.navdrawer;
-
-import com.khello.navigationdrawer.R;
+package com.khello.navigationdrawer;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,11 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class NavDrawerAdapter extends ArrayAdapter<INavDrawerItem> {
+public class NavDrawerAdapter extends ArrayAdapter<NavDrawerItem> {
 
     private LayoutInflater inflater;
     
-    public NavDrawerAdapter(Context context, int textViewResourceId, INavDrawerItem[] objects ) {
+    public NavDrawerAdapter(Context context, int textViewResourceId, NavDrawerItem[] objects ) {
         super(context, textViewResourceId, objects);
         this.inflater = LayoutInflater.from(context);
     }
@@ -22,7 +20,7 @@ public class NavDrawerAdapter extends ArrayAdapter<INavDrawerItem> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = null ;
-        INavDrawerItem menuItem = this.getItem(position);
+        NavDrawerItem menuItem = this.getItem(position);
         if ( menuItem.getType() == NavMenuItem.ITEM_TYPE ) {
             view = getItemView(convertView, parent, menuItem );
         }
@@ -32,7 +30,7 @@ public class NavDrawerAdapter extends ArrayAdapter<INavDrawerItem> {
         return view ;
     }
     
-    public View getItemView( View convertView, ViewGroup parentView, INavDrawerItem navDrawerItem ) {
+    public View getItemView( View convertView, ViewGroup parentView, NavDrawerItem navDrawerItem ) {
         
         NavMenuItem menuItem = (NavMenuItem) navDrawerItem ;
         NavMenuItemHolder navMenuItemHolder = null;
@@ -62,7 +60,7 @@ public class NavDrawerAdapter extends ArrayAdapter<INavDrawerItem> {
     }
 
     public View getSectionView(View convertView, ViewGroup parentView,
-            INavDrawerItem navDrawerItem) {
+            NavDrawerItem navDrawerItem) {
         
         NavMenuSection menuSection = (NavMenuSection) navDrawerItem ;
         NavMenuSectionHolder navMenuItemHolder = null;
